@@ -4,67 +4,57 @@
 This project is an Online Food Ordering System built using the Python Django framework. It allows users to browse a food menu, place orders, and receive confirmation. The system is designed with a responsive and user-friendly interface.
 
 # Features
-User Registration & Login: Secure user authentication system. <br>
+<b>User Registration & Login:</b> Secure user authentication system. <br>
 
-Food Menu Display: View all available food items.<br>
+<b>Food Menu Display:</b> View all available food items.<br>
 
-Ordering System: Users can place orders and receive real-time confirmation.<br>
+<b>Ordering System:</b> Users can place orders and receive real-time confirmation.<br>
 
-Order History: Registered users can view their past orders.<br>
+<b>Order History:</b> Registered users can view their past orders.<br>
 
-Responsive Design: Fully responsive using HTML, CSS, JavaScript, and Bootstrap.<br>
+<b>Responsive Design:</b> Fully responsive using HTML, CSS, JavaScript, and Bootstrap.<br>
 
 # Technologies Used
-Backend: Python, Django<br>
 
-Frontend: HTML, CSS, JavaScript, Bootstrap<br>
+<b>Backend:</b> Python, Django<br>
 
-Database: SQLite (or mention if you used another database)<br>
+<b>Frontend:</b> HTML, CSS, JavaScript, Bootstrap<br>
+
+<b>Database:</b> SQLite (or mention if you used another database)<br>
 
 # Installation
-Clone the repository:
+1. <b>Clone the repository:</b> <br>
+    git clone https://github.com/your-username/online-food-ordering-system.git <br>
+    cd online-food-ordering-system <br>
 
-bash
-Copy code
-git clone https://github.com/your-username/online-food-ordering-system.git
-cd online-food-ordering-system
-Create and activate a virtual environment:
+2. <b>Create and activate a virtual environment:</b> <br>
+     python -m venv venv <br>
+     source venv/bin/activate  # For Windows: venv\Scripts\activate
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
-Install the required packages:
+3. <b>Install the required packages:</b> <br>
+     pip install -r requirements.txt <br>
+     
+4. <b>Apply database migrations:</b> <br>
+    python manage.py migrate <br>
+    
+5. <b>Run the server:</b> <br>
+    python manage.py runserver <br>
+    
+6. Visit the application at http://127.0.0.1:8000/.
 
-bash
-Copy code
-pip install -r requirements.txt
-Apply database migrations:
+# How to Use
 
-bash
-Copy code
-python manage.py migrate
-Run the server:
+<b>Sign Up:</b> Create an account or log in if you're an existing user.
 
-bash
-Copy code
-python manage.py runserver
-Visit the application at http://127.0.0.1:8000/.
+<b>Browse Menu:</b> Browse through the list of available food items.
 
-How to Use
-Sign Up: Create an account or log in if you're an existing user.
-Browse Menu: Browse through the list of available food items.
-Place Order: Add items to your cart and place an order.
-Order Confirmation: Receive confirmation once the order is placed.
-Order History: View your previous orders from the profile section.
-Screenshots
-(Include some images of your project’s UI here)
+<b>Place Order:</b> Add items to your cart and place an order.
 
-Contributing
-Feel free to fork this repository and submit pull requests for improvements or bug fixes. Contributions are welcome!
+<b>Order Confirmation:</b> Receive confirmation once the order is placed.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+<b>Order History:</b> View your previous orders from the profile section.
 
-Contact
-For any inquiries or feedback, reach out to me via LinkedIn or Email.
+# Contact
+For any inquiries or feedback, reach out to me via LinkedIn or Email. <br>
+<b>Linkedin Profile :</b> <a href="https://www.linkedin.com/in/therandhirray"> therandhirray </a> <br>
+<b>Email :</b> er.randhirray@gmail.com

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+
+<div class="container mt-4">
+    <h2 class="text-center p-2 mt-3 mb-4 text-warning">Profile</h2>
+    {% comment %} <div class="row"> {% endcomment %}
+        
+        <!-- User Information Column -->
+        <div class="col-10 mx-auto mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center text-warning">User Information</h2>
+                    <div class="p-3">
+                        <p class="card-text"><strong class="me-3">Username:</strong>{{ user.username }}</p>
+                        <p class="card-text"><strong class="me-2">First Name:</strong> {{ user.first_name }}</p>
+                        <p class="card-text"><strong class="me-2">Last Name:</strong> {{ user.last_name }}</p>
+                        <p class="card-text"><strong class="me-5">Email:</strong> {{ user.email }}</p>
+                    </div><hr>
+                    <div class="mt-4 mb-2 text-center">
+                        <a href="{% url 'home' %}"><button  class="btn btn-dark">Back to Home</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order History Column -->
+        <div class="col-10 mx-auto mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center text-warning mb-5">Order History</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Recipe</th>
+                                    <th>Address</th>
+                                    <th>Mobile</th>
+                                    <th>Quantity</th>
+                                    <th>Total Price</th>
+                                    <th>Order Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for order in orders %}
+                                    <tr>
+                                        <td>{{ order.recipe.name }}</td>
+                                        <td>{{ order.address }}</td>
+                                        <td>{{ order.phone_number }}</td>
+                                        <td>{{ order.quantity }}</td>
+                                        <td>${{ order.total_price }}</td>
+                                        <td>{{ order.created_at }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table><hr>
+                        <div class="mt-4 mb-2 text-center">
+                            <a href="{% url 'home' %}"><button  class="btn btn-dark">Place Your Order</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% comment %} </div> {% endcomment %}
+</div>
+{% endblock %}

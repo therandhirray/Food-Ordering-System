@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Order Confirmation{% endblock %}
+{% block content %}
+
+<div class="container text-center p-5">
+    <h2>Order Confirmed</h2>
+    <p>Thank you for your order. Visit again soon!</p>
+    <img src="{% static 'images/confirmation_image.png' %}" alt="Order Confirmed" class="img-fluid mt-3" style="max-width: 300px;">
+    <div class="mt-4">
+        <a href="{% url 'home' %}"><button  class="btn btn-dark">Back to Home</button></a>
+    </div>
+</div>
+
+{% endblock %}
